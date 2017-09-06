@@ -1,5 +1,6 @@
 
 import java.util.*;
+import demo.*;
 /**
  * 
  * 只是用来测试一下的，不要紧张
@@ -13,10 +14,8 @@ public class wang {
 	 * @return 没有返回值
 	 */
 	public static void main(String[] args){
-		teather t=new teather();
-		t.name="sb";
-		t.age=18;
-		t.eat();
+		zhou z=new zhou();
+		z.dr();
 	}
 }
 interface eat{
@@ -26,8 +25,8 @@ interface speak extends eat{
 	 void speak();
 }
 	//abstract void drink();
-class person{
-	String name;
+   class person{
+	protected String name;
 	int age;
 	private String gender;
 }
