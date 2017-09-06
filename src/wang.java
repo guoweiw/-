@@ -12,30 +12,38 @@ public class wang {
 	 * @return 没有返回值
 	 */
 	public static void main(String[] args){
-		System.out.println("ff".equals("ff"));
+		long start=System.currentTimeMillis();
+		int sum=0;
+		for(int i=0;i<1000;i++){
+			sum+=i;
+		}
+		long end=System.currentTimeMillis();
+		System.out.println(end+";"+start);
+		System.out.println(end-start);
 	}
 }
-class person{
-	String name="haha";
-	void eat(){
-		System.out.println("我可以吃饭");
-	}
+abstract class person{
+	static final String NAME="w";
+	int age;
+	abstract void eat();
 }
+	//abstract void drink();
 
-class teather extends person{
+ class teather extends person{
 	void eat(){
-		System.out.println(name);
+		System.out.println("我是老师，我可以吃人");
 	}
 	void teach(){
 		
 	}
 }
 
-class student extends person{
+	class student extends person{
 	void eat(){
 		System.out.println("我是学生，我只能吃屎");
 	}
 	void learn(){
 		
 	}
-}
+	}
+
