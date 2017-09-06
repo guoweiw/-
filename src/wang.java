@@ -1,3 +1,4 @@
+
 import java.util.*;
 /**
  * 
@@ -12,31 +13,32 @@ public class wang {
 	 * @return 没有返回值
 	 */
 	public static void main(String[] args){
-		
+		teather t=new teather();
+		t.name="sb";
+		t.age=18;
+		t.eat();
 	}
 }
-abstract class person{
-	static final String NAME="w";
-	int age;
-	abstract void eat();
+interface eat{
+	 void eat();
+}
+interface speak extends eat{
+	 void speak();
 }
 	//abstract void drink();
-
- class teather extends person{
-	void eat(){
-		System.out.println("我是老师，我可以吃人");
-	}
-	void teach(){
-		
-	}
+class person{
+	String name;
+	int age;
+	private String gender;
 }
 
-	class student extends person{
-	void eat(){
-		System.out.println("我是学生，我只能吃屎");
+ class teather extends person implements  speak{
+	public void eat(){
+		System.out.println("我是"+this.name+"我的年龄是"+age);
 	}
-	void learn(){
-		
-	}
-	}
+	 public void speak(){
+		//System.out.println("我是"+this.name+"我的年龄是"+age);
+	 };
+}
+
 
