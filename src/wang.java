@@ -12,14 +12,7 @@ public class wang {
 	 * @return 没有返回值
 	 */
 	public static void main(String[] args){
-		long start=System.currentTimeMillis();
-		int sum=0;
-		for(int i=0;i<1000;i++){
-			sum+=i;
-		}
-		long end=System.currentTimeMillis();
-		System.out.println(end+";"+start);
-		System.out.println(end-start);
+		
 	}
 }
 abstract class person{
