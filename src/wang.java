@@ -17,7 +17,6 @@ public class wang {
 }
 class person{
 	String name="haha";
-	int age;
 	void eat(){
 		System.out.println("Œ“ø…“‘≥‘∑π");
 	}
